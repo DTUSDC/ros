@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<robot name="mando" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Materials -->
+  <material name="Black">
+    <color rgba="0.0 0.0 0.0 1.0" />
+  </material>
+  <material name="Red">
+    <color rgba="0.8 0.0 0.0 1.0" />
+  </material>
+  <material name="White">
+    <color rgba="1.0 1.0 1.0 1.0" />
+  </material>
+  <material name="Blue">
+    <color rgba="0.0 0.0 0.8 1.0" />
+  </material>
+
+  <!-- Xacro Properties -->
+  <xacro:property name="baselink_height" value="0.35" />
+  <xacro:property name="ground_clearance" value="0.15" />
+
+
+  <!-- Base Footprint -->
+  <link name="base_footprint">
+  </link>
+
+  <!-- Baselink -->
+  <link name="base_link">
+  <inertial>
+    <mass value="30" />
+    <origin xyz="0 0 0" />
+    <inertia ixx="33.79" ixy="-0.03" ixz="2.67" iyy="53.15" iyz="0" izz="44.73" />
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 -0.83 0.15" />
+    <geometry>
+      <mesh filename="package://mando_description/meshes/mando_chasis.STL" scale="0.001 0.001 0.001" />
+    </geometry>
+    <material name="Red" />
+  </visual>
+  </link>
+
+  <joint name="basefootprint_to_baselink" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0 0 ${baselink_height+ground_clearance}" rpy="0 0 0" />
+  </joint>
+
+</robot>
