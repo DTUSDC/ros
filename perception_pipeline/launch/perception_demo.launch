@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="perception_pipeline" name="perception_demo_cam2" type="perception_demo_cam2.py" output="screen" />
+</launch>
