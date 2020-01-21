@@ -1,8 +1,0 @@
-prefix=/home/obviyus/Desktop/ROS/src/build/devel
-
-Name: perception_pipeline
-Description: Description of perception_pipeline
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
