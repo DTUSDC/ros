@@ -12,7 +12,7 @@
 
       <!-- start an empty world simulation-->
       <include file="$(find gazebo_ros)/launch/empty_world.launch">
-	 <arg name="world_name" value="$(find kbot)/maze.world"/>
+	 
       </include>
 
       <!-- run a python script to send a service call to gazebo ros to spawn a urdf robot-->
