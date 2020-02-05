@@ -1,4 +1,4 @@
-footprint: [[0.59, 0.33], [0.59, -0.33], [-0.59, -0.33], [-0.59, 0.33]]
+footprint: [[0.6, 0.35], [0.6, -0.35], [-0.6, -0.35], [-0.6, 0.35]]
 
 observation_sources: laser_scan_sensor
 
@@ -12,6 +12,6 @@ laser_scan_sensor:
 inflation_layer:
   enabled:              true
   cost_scaling_factor:  2.58  # exponential rate at which the obstacle cost drops off (default: 10)
-  inflation_radius:     1.75  # max. distance from an obstacle at which costs are incurred for planning paths.
+  inflation_radius:     1  # max. distance from an obstacle at which costs are incurred for planning paths.
 
 

@@ -1,6 +1,6 @@
 TrajectoryPlannerROS:
   holonomic_robot: false
   meter_scoring: true
-  max_vel_x: 0.5
-  min_vel_x: -0.5
+  max_vel_x: 0.55
+  min_vel_x: -0.55
   max_vel_y: 0
