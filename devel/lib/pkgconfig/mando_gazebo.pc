@@ -1,0 +1,8 @@
+prefix=/home/krush/Desktop/github/ros/devel
+
+Name: mando_gazebo
+Description: Description of mando_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
