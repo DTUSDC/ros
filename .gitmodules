@@ -1,0 +1,9 @@
+[submodule "cv_camera"]
+	path = cv_camera
+	url = https://github.com/OTL/cv_camera
+[submodule "usb_cam"]
+	path = usb_cam
+	url = https://github.com/ros-drivers/usb_cam
+[submodule "vision_opencv"]
+	path = vision_opencv
+	url = https://github.com/ros-perception/vision_opencv
