@@ -1,5 +1,11 @@
 global_costmap:
   global_frame: map
   robot_base_frame: base_link
-  update_frequency: 5.0
+  
+  update_frequency: 1
+  publish_frequency: 1
   static_map: true
+  rolling_window: true # Follow robot while navigating
+  width: 200
+  height: 200
+  resolution: 0.05
