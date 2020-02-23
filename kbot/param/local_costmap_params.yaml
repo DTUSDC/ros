@@ -1,9 +1,9 @@
 local_costmap:
   global_frame: odom
   robot_base_frame: base_link
-  update_frequency: 10
-  publish_frequency: 10
-  static_map: true
+  update_frequency: 20
+  publish_frequency: 20
+  static_map: false
   rolling_window: true # Follow robot while navigating
   width: 5
   height: 5
