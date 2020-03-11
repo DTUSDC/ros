@@ -161,7 +161,7 @@
     <child link="left_wheel" />
     <origin rpy="-1.5708 0 0" xyz="0.159795 0.3005 -.38978" />
   </joint>
-  <link name="hokuyo_link">
+  <link name="lidar_link">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
@@ -180,10 +180,10 @@
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
   </link>
-  <joint name="hokuyo_joint" type="fixed">
+  <joint name="lidar_joint" type="fixed">
     <origin xyz="0.630975 0 -0.1807467" rpy="0 0 0" />
     <parent link="base_link" />
-    <child link="hokuyo_link" />
+    <child link="lidar_link" />
   </joint>
   <link name="camera_link">
     <visual>
@@ -249,8 +249,8 @@
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
-  <gazebo reference="hokuyo_link">
-    <sensor name="head_hokuyo_sensor" type="ray">
+  <gazebo reference="lidar_link">
+    <sensor name="head_lidar_sensor" type="ray">
       <pose>0 0 0 0 0 0</pose>
       <visualize>true</visualize>
       <update_rate>25</update_rate> <!-- choosen for SICK LMS111-->
@@ -271,7 +271,7 @@
       </ray>
       <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_head_hokuyo_controller">
         <topicName>/scan</topicName>
-        <frameName>hokuyo_link</frameName>
+        <frameName>lidar_link</frameName>
       </plugin>
     </sensor>
   </gazebo>
