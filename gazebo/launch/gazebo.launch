@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <launch>
       <!--urdf xml robot description loaded on parameter server-->
-      <param name = "robot_description" textfile= "$(find hermes_description)/urdf/hermes.xacro" />
+      <param name = "robot_description" textfile= "$(find description)/urdf/hermes.xacro" />
 
       <!-- launch robot state publisher-->
       <node name ="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
@@ -11,7 +11,7 @@
 
       <!-- start an empty world simulation-->
       <include file="$(find gazebo_ros)/launch/empty_world.launch" >
-            	<arg name="world_name" value="$(find hermes_gazebo)/world/maze.world"/>
+            	<arg name="world_name" value="$(find gazebo)/world/maze.world"/>
       </include>
 
       <!-- run a python script to send a service call to gazebo ros to spawn a urdf robot-->
