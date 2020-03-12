@@ -13,10 +13,10 @@ from cv_bridge import CvBridge, CvBridgeError
 class image_converter:
 
   def __init__(self):
-    self.image_pub = rospy.Publisher("camera/rgb/image_raw_2",Image, queue_size=10)
+    self.image_pub = rospy.Publisher("camera/rgb/image_raw",Image, queue_size=10)
 
     self.bridge = CvBridge()
-    self.image_sub = rospy.Subscriber("/image_publisher_1570460241182594969/image_raw",Image,self.callback)
+    self.image_sub = rospy.Subscriber("/usb_cam/image_raw",Image,self.callback)
 
   def callback(self,data):
     try:

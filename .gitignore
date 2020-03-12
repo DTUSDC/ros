@@ -82,5 +82,3 @@ CATKIN_IGNORE
 .history
 
 # End of https://www.gitignore.io/api/ros,cmake,visualstudiocode
-description/.vscode/c_cpp_properties.json
-description/.vscode/settings.json
