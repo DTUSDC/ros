@@ -74,10 +74,10 @@ void updateEncoder()
   {
     dt = time1;
   }
-  velocity = (5 * 0.000078914 * 1600 * 100 * 3600) / (1600 * dt);          //in miles per hour
+  velocity = (5 * 0.000078914 * 1600 * 100 * 3600) / (1600 * dt); //in miles per hour
   time2 = time1;
   Serial.println(velocity);
-  
+
   chatter.publish(&msg1);
   vel.publish(&msg2);
 

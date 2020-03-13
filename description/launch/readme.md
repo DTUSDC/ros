@@ -1,1 +1,1 @@
-This folder is for launching the robot in rviz only
+This folder is for launching the robot in RViz.

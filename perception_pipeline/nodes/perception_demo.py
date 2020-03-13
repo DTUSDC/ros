@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# Perception pipeline for DTUSDC
+
 from __future__ import print_function
 from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
@@ -93,7 +96,6 @@ class image_converter:
 
         # Press q to quit
         cv2.waitKey(25)
-          
 
         """
         cv2.destroyAllWindows()
