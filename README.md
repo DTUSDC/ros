@@ -7,7 +7,7 @@ This document will give you a brief description of the repo's layout and an over
 ## Folder Structure
 
  * **description**
-    *URDF files for our robot *
+    *URDF files for our robot*
  * **gazebo**
     *Package to launch the simulation along with a test maze world*
  * **navigation**
