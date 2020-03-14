@@ -1,8 +1,9 @@
 import rospy
 from std_msgs.msg import Float32
 
-#def callback1(ticks):
+# def callback1(ticks):
 #    rospy.loginfo(ticks.data)
+
 
 def callback2(vel):
     rospy.loginfo(vel.data)

@@ -7,3 +7,15 @@
 [submodule "vision_opencv"]
 	path = perception/src/vision_opencv
 	url = https://github.com/ros-perception/vision_opencv
+[submodule "encoder/src"]
+	path = encoder/src
+	url = https://github.com/RoboticsClubatUCF/ucf_AHRS
+[submodule "perception/src/usb_cam"]
+	path = perception/src/usb_cam
+	url = https://github.com/ros-drivers/usb_cam
+[submodule "perception/src/vision_opencv"]
+	path = perception/src/vision_opencv
+	url = https://github.com/ros-perception/vision_opencv
+[submodule "perception/src/cv_camera"]
+	path = perception/src/cv_camera
+	url = https://github.com/OTL/cv_camera

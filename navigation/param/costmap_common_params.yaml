@@ -6,12 +6,19 @@ footprint_padding: 0.25
 
 map_type: costmap
 observation_sources: scan
-scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+scan:
+  {
+    sensor_frame: base_scan,
+    data_type: LaserScan,
+    topic: scan,
+    marking: true,
+    clearing: true,
+  }
 
 plugins:
-- {name: static_layer, type: "costmap_2d::StaticLayer"}
-- {name: obstacles_layer, type: "costmap_2d::ObstacleLayer"}
-- {name: inflater_layer, type: "costmap_2d::InflationLayer"}
+  - { name: static_layer, type: "costmap_2d::StaticLayer" }
+  - { name: obstacles_layer, type: "costmap_2d::ObstacleLayer" }
+  - { name: inflater_layer, type: "costmap_2d::InflationLayer" }
 
 static_layer:
   map_topic: /map
@@ -19,7 +26,16 @@ static_layer:
 
 obstacles_layer:
   observation_sources: laser_scan_sensor
-  laser_scan_sensor: {sensor_frame: laser_frame, data_type: LaserScan, topic: scan, marking: true, clearing: true,  obstacle_range: 6.0, raytrace_range: 8.5}
+  laser_scan_sensor:
+    {
+      sensor_frame: laser_frame,
+      data_type: LaserScan,
+      topic: scan,
+      marking: true,
+      clearing: true,
+      obstacle_range: 6.0,
+      raytrace_range: 8.5,
+    }
 
 inflater_layer:
   inflation_radius: 2.0

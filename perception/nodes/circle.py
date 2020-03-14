@@ -14,6 +14,7 @@ import sys
 import roslib
 roslib.load_manifest('perception_pipeline')
 
+
 class image_converter:
 
     def __init__(self):
