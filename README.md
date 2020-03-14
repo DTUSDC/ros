@@ -1,4 +1,5 @@
 # DTUSDC's Software Stack
+![ROS CI](https://github.com/DTUSDC/ros/workflows/ROS%20CI/badge.svg?branch=master)
 
 Welcome to the DTUSDC IGVC software repo!
 
