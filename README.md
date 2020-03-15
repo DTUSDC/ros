@@ -23,7 +23,7 @@ This document will give you a brief description of the repo's layout and an over
     git clone https://github.com/dtusdc/ros --recursive
     ```
 
-2. Run `catkin_make` in the workspace to build all the packages:
+2. Run `catkin build` in the workspace to build all the packages:
     ```bash
     catkin build
     ```
