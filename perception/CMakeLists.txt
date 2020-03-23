@@ -9,6 +9,8 @@ project(perception_pipeline)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   cv_bridge
+  vision_opencv
+  usb_cam
   rospy
   sensor_msgs
   std_msgs
