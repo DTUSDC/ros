@@ -7,18 +7,14 @@ This document will give you a brief description of the repo's layout and an over
 
 ## Folder Structure
 
- * **description**
-    *URDF files for our robot*
- * **gazebo**
-    *Package to launch the simulation along with a test maze world*
+ * **simulation**
+    *Package to launch the simulation along with a test maze world and URDF*
  * **navigation**
     *Collection of nodes that form our navigation stack*
  * **encoder**
     *Nodes that form the arduino encoders.*
- * **perception_pipeline**
+ * **perception**
     *Nodes and scripts that contain the perception pipeline.*
- * **cv_camera, usb_cam and vision_opencv**
-    *Dependant packages.*
     
 ## Building Code
  
@@ -27,9 +23,9 @@ This document will give you a brief description of the repo's layout and an over
     git clone https://github.com/dtusdc/ros --recursive
     ```
 
-2. Run `catkin_make` in the workspace to build all the packages:
+2. Run `catkin build` in the workspace to build all the packages:
     ```bash
-    catkin_make
+    catkin build
     ```
 
 ## Running Gazebo
@@ -38,7 +34,7 @@ This document will give you a brief description of the repo's layout and an over
 
 The following command will load the simulation along with the robot mesh:
 ```
-roslaunch description rviz.launch
+roslaunch simulation simulation.launch
 ```
 
 **Load up Navigation:**
