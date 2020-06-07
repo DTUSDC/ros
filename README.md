@@ -33,13 +33,13 @@ This document will give you a brief description of the repo's layout and an over
 **Load up Rviz/Gazebo:**
 
 The following command will load the simulation along with the robot mesh:
-```
+```bash
 roslaunch simulation simulation.launch
 ```
 
 **Load up Navigation:**
 
 The following command will load the navigation stack:
-```
+```bash
 roslaunch navigation navigation.launch
 ```
