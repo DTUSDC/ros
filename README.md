@@ -24,7 +24,7 @@ This document will give you a brief description of the repo's layout and an over
    sudo apt-get ros-melodic-navigation
    ```
 
-2. Download the Gmapping package
+2. Download and install `gmapping`:
    ```bash
    sudo apt-get install ros-melodic-slam-gmapping
    ```
