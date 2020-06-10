@@ -18,7 +18,7 @@ This document will give you a brief description of the repo's layout and an over
     
 ## Prerequisites
 
-1. Download the NavStack packages
+1. Download the `ros/navstack` packages
 
    ```bash
    sudo apt-get ros-melodic-navigation
