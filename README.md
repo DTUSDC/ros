@@ -43,3 +43,7 @@ The following command will load the navigation stack:
 ```bash
 roslaunch navigation navigation.launch
 ```
+
+
+## Maintainers
+- Ayaan Zaidi
