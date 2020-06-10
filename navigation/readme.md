@@ -4,7 +4,7 @@ Welcome to DTUSDC's Navigation
 
 This document will give you a brief description about the navigation capabilities of our Bot
 
-The main algorithm we are using in SLAM-GMAPPING for simultaneous localisation and mapping
+The main algorithm we are using is `gmapping` for simultaneous localisation and mapping
 Move-Base node is the main compoment of ROSNavigation stack
 Local,Global Costmap and Move Base are configured with the parameters
 
