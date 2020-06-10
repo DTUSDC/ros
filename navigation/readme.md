@@ -4,7 +4,9 @@ Welcome to DTUSDC's Navigation
 
 This document will give you a brief description about the navigation capabilities of our Bot
 
-
+The main algorithm we are using in SLAM-GMAPPING for simultaneous localisation and mapping 
+Move-Base node is the main compoment of ROSNavigation stack 
+Local,Global Costmap and Move Base are configured with the parameters
 
 ## Navigation is done with help of ROS Navigation Stack
 
@@ -15,16 +17,7 @@ This document will give you a brief description about the navigation capabilitie
 * **param**
    *This folder contains the YAML files for configuring our navigation stack*
   
-## Prerequisites
-1. Download the NavStack packages
-    ```bash
-    sudo apt-get ros-melodic-navigation
-    ```
-    
-2. Download the Gmapping package
-    ```bash
-    sudo apt-get install ros-melodic-slam-gmapping
-    ```
+
 ## Running Navigation
 **Load up Rviz/Gazebo:**
 
