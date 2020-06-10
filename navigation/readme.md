@@ -4,9 +4,24 @@ Welcome to DTUSDC's Navigation
 
 This document will give you a brief description about the navigation capabilities of our Bot
 
+
+move_base node is the main compoment of `ros/navstack`
+
+[Navstack RosWiki](http://wiki.ros.org/move_base?distro=noetic)
+
 The main algorithm we are using is `gmapping` for simultaneous localisation and mapping
-Move-Base node is the main compoment of ROSNavigation stack
+
+[Gmapping RosWiki](http://wiki.ros.org/gmapping)
+
 Local,Global Costmap and Move Base are configured with the parameters
+
+[2D Costmap RosWiki](http://wiki.ros.org/costmap_2d?distro=noetic)
+
+Global planner and Local planner are used for pathplanning
+
+[Global Planner RosWiki](http://wiki.ros.org/global_planner?distro=noetic)
+
+[Local Planner RosWiki](http://wiki.ros.org/base_local_planner?distro=noetic)
 
 ## Navigation is done with help of ROS Navigation Stack
 
