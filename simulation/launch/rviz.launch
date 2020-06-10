@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <launch>
     <!--urdf xml robot description loaded on parameter server-->
-    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find description)/urdf/hermes.xacro'" />
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find simulation)/urdf/hermes.xacro'" />
     <!-- launch robot state publisher-->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
     <!-- launch rviz-->
