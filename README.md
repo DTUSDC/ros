@@ -16,6 +16,20 @@ This document will give you a brief description of the repo's layout and an over
  * **perception**
     *Nodes and scripts that contain the perception pipeline.*
     
+## Prerequisites
+
+1. Download the `ros/navstack` packages
+
+   ```bash
+   sudo apt-get ros-melodic-navigation
+   ```
+
+2. Download and install `gmapping`:
+   ```bash
+   sudo apt-get install ros-melodic-slam-gmapping
+   ```
+   
+    
 ## Building Code
  
 1. Clone the repository into the src directory of a catkin workspace:
@@ -27,6 +41,7 @@ This document will give you a brief description of the repo's layout and an over
     ```bash
     catkin build
     ```
+    
 
 ## Running Gazebo
 
@@ -47,3 +62,4 @@ roslaunch navigation navigation.launch
 
 ## Maintainers
 - Ayaan Zaidi
+- Tanmay Jain
