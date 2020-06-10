@@ -27,7 +27,16 @@ This document will give you a brief description of the repo's layout and an over
     ```bash
     catkin build
     ```
-
+## Prerequisites
+1. Download the NavStack packages
+    ```bash
+    sudo apt-get ros-melodic-navigation
+    ```
+    
+2. Download the Gmapping package
+    ```bash
+    sudo apt-get install ros-melodic-slam-gmapping
+    ```
 ## Running Gazebo
 
 **Load up Rviz/Gazebo:**
