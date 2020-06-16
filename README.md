@@ -47,5 +47,5 @@ roslaunch navigation navigation.launch
 
 ## Maintainers
 - Ayaan Zaidi
-- Krushnal Patel
 - Tanmay Jain
+- Krushnal Patel
