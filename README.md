@@ -11,8 +11,8 @@ This document will give you a brief description of the repo's layout and an over
     *Package to launch the simulation along with a test maze world and URDF*
  * **navigation**
     *Collection of nodes that form our navigation stack*
- * **encoder**
-    *Nodes that form the arduino encoders.*
+ * **drivers**
+    *Includes drivers for sensors.*
  * **perception**
     *Nodes and scripts that contain the perception pipeline.*
     
